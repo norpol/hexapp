@@ -5,6 +5,18 @@
     "toolbar": false,
     "width": 1024,
     "height": 768,
-    "kiosk": true
+    "kiosk": false,
+    "icon": "img/Hexatouch.png",
+    "as_desktop": false,
+    "frame": false
+  },
+    "maintainers": {
+    "name": "Phileas Lebada",
+    "email": "pl@woerm.at",
+    "web": "https://woerm.at"
+  },
+    "licenses": {
+    "type": "GPLv3",
+    "url": "https://gnu.org/licenses/gpl.html"
   }
 }

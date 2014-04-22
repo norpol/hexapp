@@ -1,11 +1,16 @@
 doctype html
-html(lang="en")
+html(lang="de")
   head
     title = Hexatouch:WebTechnolgiesExplained
+    meta(charset="utf-8")
     script(type='text/javascript').
       alert("Super Fancy Alert in Kisok Mode");
   body
     h1 Lerne den Aufbau des Webs kennen.
     .client
       p Platziere den Client hier.
-      p Super toll.
+    script(type='text/javascript').
+     document.write(process.version)
+     var markdown = require('markdown').markdown;
+     document.write(markdown.toHTML("Hello **World**!"));
+
