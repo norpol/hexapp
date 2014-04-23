@@ -3,4 +3,32 @@ script(src="./js/libs/socket.io.js")
 script(src="./js/libs/Tuio.min.js")
 script(src="./js/libs/lodash.js")
 script(src="./js/libs/Tuio.min.js")
+script.
+     $(function() {
+         var client = new Tuio.Client({
+             host: "http://localhost:5000"
+         }),
+         screenW = $(document).width(),
+         screenH = $(document).height()
+
+         cursors = {},
+
+         onConnect = function() {
+             console.log("onConnect");
+         },
+
+         onAddTuioCursor = function(addCursor) {
+             var $addCursor = $('<div class="tuioCursor"></div>');
+             $("body").append($addCursor);
+             cursors[addCursor.getCursorId()] = $addCursor;
+             onUpdateTuioCursor(addCursor);
+         }
+
+         onUpdateTuioCursor = function(updateCursor) {
+             var $updateCursor = cursors[updateĊursor.getCursorId()};
+             $updateCrusor.css({
+                 left: updateCursor.getScreenX(screenW),
+                 top: updateCursor.getScreenY(scrrenH)
+             });
+         },
 
