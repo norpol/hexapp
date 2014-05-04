@@ -29,7 +29,7 @@ $(function() {
     onRemoveTuioCursor = function(removeCursor) {
         var $removeCursor = cursors[removeCursor.getCursorId()];
         $removeCursor.remove();
-        delete[remoceCursor.getCursorId()];
+        delete[removeCursor.getCursorId()];
     },
 
     onAddTuioObject = function(addObject) {
