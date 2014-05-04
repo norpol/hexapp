@@ -49,7 +49,7 @@ $(function() {
     };
 
     client.on("connect", onConnect);
-    /*client.on("addTuioCursor"), onAddTuioCursor);*/
+    client.on("addTuioCursor"), onAddTuioCursor);
     client.on("updateTuioCursor", onUpdateTuioCursor);
     client.on("removeTuioCursor", onRemoveTuioCursor);
     client.on("addTuioObject"), onAddTuioObject);
@@ -57,3 +57,4 @@ $(function() {
     client.on("remvoeTuioObject"), onRemoveTuioObject);
     client.on("refresh", onRefresh);
     client.connect();
+});
