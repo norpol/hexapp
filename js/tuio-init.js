@@ -27,7 +27,7 @@ $(function() {
     },
 
     onRemoveTuioCursor = function(removeCursor) {
-        var $removeCursor = cursors[(removeCursor.getCursorId()];
+        var $removeCursor = cursors[removeCursor.getCursorId()];
         $removeCursor.remove();
         delete[remoceCursor.getCursorId()];
     },
@@ -49,7 +49,7 @@ $(function() {
     };
 
     client.on("connect", onConnect);
-    client.on("addTuioCursor"), onAddTuioCursor);
+    /*client.on("addTuioCursor"), onAddTuioCursor);*/
     client.on("updateTuioCursor", onUpdateTuioCursor);
     client.on("removeTuioCursor", onRemoveTuioCursor);
     client.on("addTuioObject"), onAddTuioObject);
