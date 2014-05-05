@@ -41,10 +41,10 @@ $(function() {
 
     onUpdateTuioObject = function(updateObject) {
         var $updateObject = cursors[updateObject.getSymbolId()];
-        console.log(updateObject.getAngle();
         $updateObject.css({
             left: updateObject.getScreenX(screenW),
-            top: updateObject.getScreenY(screenH)
+            top: updateObject.getScreenY(screenH),
+            webkitTransform: 'rotate(' + updateObject.getAngle() + 'rad)'
         });
 
     },
