@@ -29,6 +29,7 @@ $(function() {
     onRemoveTuioCursor = function(removeCursor) {
         var $removeCursor = cursors[removeCursor.getCursorId()];
         $removeCursor.remove();
+
         delete[removeCursor.getCursorId()];
     },
 
@@ -40,11 +41,19 @@ $(function() {
     },
 
     onUpdateTuioObject = function(updateObject) {
-        console.log(updateObject);
+        var $updateObject = cursors[updateObject.getSymbolId()];
+        $updateObject.css({
+            left: updateObject.getScreenX(screenW),
+            top: updateObject.getScreenY(screenH)
+        });
     },
 
     onRemoveTuioObject = function(removeObject) {
-        console.log(removeObject);
+        var $removeObject = cursors[removeObject.getSymbolId()];
+        $removeObject.remove();
+
+        delete[removeObject.getSymbolId()];
+     
     },
 
     onRefresh = function(time) {
