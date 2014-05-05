@@ -4,7 +4,6 @@ $(function() {
     }),
     screenW = $(document).width(),
     screenH = $(document).height()
-
     cursors = {},
 
     onConnect = function() {
@@ -42,10 +41,12 @@ $(function() {
 
     onUpdateTuioObject = function(updateObject) {
         var $updateObject = cursors[updateObject.getSymbolId()];
+        console.log(updateObject.getAngle();
         $updateObject.css({
             left: updateObject.getScreenX(screenW),
             top: updateObject.getScreenY(screenH)
         });
+
     },
 
     onRemoveTuioObject = function(removeObject) {

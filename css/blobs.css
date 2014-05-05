@@ -19,8 +19,13 @@ body {
     width: 20px; 
     left: 0;
     top: 0;
+    transform: rotate(0);
 }
 
+#symbol8 {
+    background-color: #F0FCFE;
+
+}
 
 apache {
     background-color: #ff0;
