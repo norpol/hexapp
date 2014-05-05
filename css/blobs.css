@@ -1,0 +1,26 @@
+body {
+        background: #000;
+        margin: 0;
+}
+
+.tuioCursor {
+    background: #BAD455;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+}
+
+.tuioObject {
+    background: #F0ADEF;
+    height: 20px;
+    width: 20px; 
+    left: 0;
+    top: 0;
+}
+
+
+apache {
+    background-color: #ff0;
+}

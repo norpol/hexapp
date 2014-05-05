@@ -36,8 +36,7 @@ $(function() {
         var $addObject = $('<div class="tuioObject"></div>');
         $("body").append($addObject);
         cursors[addObject.getSymbolId()] = $addObject;
-        onUpdateTuioObject(addObject)
-        console.log(addObject);
+        onUpdateTuioObject(addObject);
     },
 
     onUpdateTuioObject = function(updateObject) {
