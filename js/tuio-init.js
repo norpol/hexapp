@@ -34,10 +34,10 @@ $(function() {
     },
 
     onAddTuioObject = function(addObject) {
-        var $addObject = $('<div class="tuioObject"></div>');
+        var $addObject = $('<div id="symbol' + addObject.getSymbolId()+ '" class="tuioObject"></div>');
         $("body").append($addObject);
         cursors[addObject.getSymbolId()] = $addObject;
-        onUpdateTuioObject(addObject);
+        onUpdateTuioObject(addObject);;
     },
 
     onUpdateTuioObject = function(updateObject) {
