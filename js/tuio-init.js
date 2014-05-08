@@ -51,8 +51,9 @@ $(function() {
 
     onRemoveTuioObject = function(removeObject) {
         var $removeObject = cursors[removeObject.getSymbolId()];
+        setTimeout(function(removeObject){
+            $('#8').fadeOut();}, 2000);
         $removeObject.remove();
-
         delete[removeObject.getSymbolId()];
      
     },
