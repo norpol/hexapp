@@ -59,7 +59,6 @@ $(function() {
     },
 
     onRefresh = function(time) {
-        console.log(time);
     };
 
     client.on("connect", onConnect);
