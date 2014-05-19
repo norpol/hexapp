@@ -36,7 +36,8 @@ $(function() {
         var $addObject = $('<div id="symbol' + addObject.getSymbolId()+ '" class="tuioObject"></div>');
         $("body").append($addObject);
         cursors[addObject.getSymbolId()] = $addObject;
-        onUpdateTuioObject(addObject);;
+        onUpdateTuioObject(addObject);
+
     },
 
     onUpdateTuioObject = function(updateObject) {
@@ -46,7 +47,7 @@ $(function() {
             top: updateObject.getScreenY(screenH),
             webkitTransform: 'rotate(' + updateObject.getAngle() + 'rad)'
         });
-
+        console.log(updateObject.getAngle())
     },
 
     onRemoveTuioObject = function(removeObject) {
